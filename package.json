@@ -1,0 +1,19 @@
+{
+  "name": "hokbot",
+  "version": "1.0.0",
+  "description": "A bot that shows when the Syntaxis Coffee is available.",
+  "main": "index.js",
+  "scripts": {
+    "runBot": "node .",
+    "refresh": "node src/loaders/loadCommands.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}
