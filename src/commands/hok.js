@@ -5,7 +5,7 @@ module.exports = {
 		.setName("hok")
 		.setDescription("Check of het Syntaxis Hok open is!"),
 
-	execute: async function (interaction) {
+	execute: async function(interaction) {
 		const url = "https://beheer.syntaxis.nl/api/ishethokalopen";
 		const settings = { method: "Get" };
 		let desc = "";
@@ -37,7 +37,9 @@ module.exports = {
 					.setTitle("Is het Hok al Open?")
 					.setURL("http://ishethokalopen.nl/")
 					.setDescription(desc)
-					.setImage(imgurl);
+					.setImage(imgurl)
+					.setFooter({ text: "Author: https://github.com/Joestine/",
+						iconURL: "https://avatars.githubusercontent.com/u/86741899?v=4" });
 
 				interaction.reply({ embeds: [embed] });
 			});
